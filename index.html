@@ -4,18 +4,21 @@
     <title>Google Homepage Recreation</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <!-- https://material.io/resources/icons/?style=outline -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
     rel="stylesheet">
 
 </head>
 <body>
-    <header class="top-nav">
-        <a href="#gmail" class="links">Gmail</a>
-        <a href="#images" class="links">Images</a>
+    <div class="top-nav">
+        <a href="#gmail" class="top-nav-links">Gmail</a>
+        <a href="#images" class="top-nav-links">Images</a>
         <span class="material-icons-outlined">apps</span>
-        <span class="material-icons-outlined">account_circle</span>
-    </header>
+        <button id="sign-in">Sign in</button>
+    </div>
 
     <div class="search">
         <center>
@@ -24,11 +27,22 @@
                 <input type="text" id="search-bar" placeholder="" name="search">
             </form>
             <div class="search-button">
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
+                <button class="search-button">Google Search</button>
+                <button class="search-button">I'm Feeling Lucky</button>
             </div>
         </center>
     </div>
+
+
+    <footer>
+        <p style="padding-top: 20px; padding-left: 30px;">New Zealand</p>
+        <hr>
+        <a href="#about" class="links">About</a>
+        <a href="#about" class="links">Advertising</a>
+        <a href="#about" class="links">Business</a>
+        <a href="#about" class="links">How Search works</a>
+    </footer>
+
 
 </body>
 </html>
